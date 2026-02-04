@@ -5,14 +5,16 @@ export default function RootLayout() {
   return (
     <Tabs>
       <Tabs.Screen
-        name="Home"
+        name="index"
         options={{
+          title: 'Home',
           tabBarIcon: ({ size, color, focused }) => <Ionicons name='home' size={size} color={color} focused={focused} />
         }} 
       />
       <Tabs.Screen
-        name="Settings"
+        name="settings"
         options={{
+          title: 'Settings',
           tabBarIcon: ({ size, color, focused }) => <Ionicons name='settings' size={size} color={color} focused={focused} />
         }} 
       />
